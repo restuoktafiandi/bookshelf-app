@@ -1,0 +1,15 @@
+{
+  "name": "book-shelf-app",
+  "version": "1.0.0",
+  "description": "This is a simple web-based bookshelf app for organizing books",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch"
+  },
+  "author": "Restu Oktafiandi",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
