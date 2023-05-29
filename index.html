@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Bookshelf App</title>
 </head>
+
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="w-full text-center md:text-left lg:text-left py-3 px-5 md:px-20 lg:px-40 md:flex lg:flex items-center justify-between shadow-xl ring-1 ring-gray-900/5 fixed z-[900]">
+        <h1 class="text-xl font-bold text-slate-800">Bookshelf App</h1>
+        <div class="flex items-center mt-3 md:mt-0 lg:mt-0">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input class="w-full md:w-[300] lg:w-[300px] bg-slate-100 py-1 px-4 ml-3 rounded outline-slate-600"
+                type="text" placeholder="Search...">
+        </div>
+    </header>
+    <main>
+        <div class="pt-32 md:pt-20 lg:pt-20 px-6 md:px-40 lg:px-60">
+            <form class="w-full p-8 shadow-xl ring-1 ring-gray-900/5">
+                <h1 class="text-center font-bold text-2xl text-slate-600 mb-5">Input book</h1>
+                <label class="text-lg" for="title">Title</label>
+                <input class="w-full bg-slate-100 py-2 px-5 mt-1 rounded outline-slate-600 text-lg mb-5" type="text" name="title" placeholder="Book title....">
+
+                <label class="text-lg" for="author">Author</label>
+                <input class="w-full bg-slate-100 py-2 px-5 mt-1 rounded outline-slate-600 text-lg mb-5" type="text" name="author" placeholder="Author....">
+
+                <label class="text-lg" for="yearpublished">Year Published</label>
+                <input class="w-full bg-slate-100 py-2 px-5 mt-1 rounded outline-slate-600 text-lg mb-10" type="text" name="yearpublishe" placeholder="Year published...">
+
+                <button class="w-full bg-blue-700 py-2 px-5 rounded text-lg mb-3 text-white hover:bg-blue-600" type="submmit">Read shelf</button>
+                <button class="w-full bg-blue-500 py-2 px-5 rounded text-lg mb-5 text-white hover:bg-blue-400" type="submmit">Unread shelf</button>
+            </form>
+        </div>
+    </main>
+    <script src="src/js/index.js"></script>
 </body>
+
 </html>
